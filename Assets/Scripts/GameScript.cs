@@ -99,6 +99,7 @@ public class GameScript : MonoBehaviour
 
     void Update()
     {
+        //Сообщения о действиях в игре
         if(gameNotice)
         {
             gameNoticeTimer -= Time.deltaTime;
@@ -109,6 +110,7 @@ public class GameScript : MonoBehaviour
             }
         }
 
+        //Расчет времени до боя
         if (fight)
         {
             fightTimer -= Time.deltaTime;
@@ -128,6 +130,7 @@ public class GameScript : MonoBehaviour
             }
         }
 
+        //Расчет времени для создания танка
         if (makeTank)
         {
             tankTimer -= Time.deltaTime;
@@ -142,6 +145,7 @@ public class GameScript : MonoBehaviour
             }
         }
 
+        //Расчет времени для создания рабочего
         if (makeWorker)
         {
             workerTimer -= Time.deltaTime;
@@ -155,6 +159,7 @@ public class GameScript : MonoBehaviour
             }
         }
 
+        //Расчет времени для создания нефти
         if (makeOil)
         {
             oilTimer -= Time.deltaTime;
